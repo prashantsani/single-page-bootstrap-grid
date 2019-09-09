@@ -1,8 +1,15 @@
 .bg{
   &-grey{
-    background: $gray;
+    background: $grey;
   }
   &-green{
     background: $green;
   }
+}
+
+.text-white{
+  color: $white;
+}
+.text-green{
+  color: $green;
 }

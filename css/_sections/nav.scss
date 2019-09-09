@@ -9,13 +9,10 @@ nav{
 }
 .nav{
 
-    &-social,
     &-primary{
-
-    }
-    &-primary{
-        position: absolute;
-
+        li{
+            margin-right: 15px;
+        }
     }
     &-social{
 

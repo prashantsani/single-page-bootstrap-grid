@@ -1,24 +1,29 @@
-// Primary Colors
+// Colors
 $grey: #303A3B;
+$grey-light: #F2F2F2;
 $green: #5BC8AF; 
-
-// Secondary Colors
-
-// Tertiary Colors
-
-// Background Color
+$white: #FFFFFF;
 
 
-// Grids
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (
+  xs: 0,
+  sm: 580px,
+  md: 768px,
+  lg: 992px,
+  xl: 1285px
+) !default;
 
-// Sizes
-$tablet-p: 780px; // -
-$tablet-l: 1020px; // -
-$laptop:1350px; // -
-$laptop:1500px; //+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
 
-// Section Heights
-
-// Letter Spacing
-
-$site_url: '';
+$container-max-widths: (
+  sm: 540px,
+  md: 688px,
+  lg: 882px,
+  xl: 1185px
+) !default;

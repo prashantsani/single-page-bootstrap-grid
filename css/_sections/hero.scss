@@ -1,3 +1,49 @@
 .hero{
-  height: 1156px;
+  position: relative;
+  height: 808px;
+  max-height: 90vh;
+
+  .container,
+  &-bg,
+  &-bg img{
+    width: 100%;
+    height: 100%;
+  }
+
+  &-bg{
+    position: absolute;
+    @extend .zero;
+    z-index: -1;
+    img{
+      object-fit: cover;  
+    }
+    object-fit: cover;
+  }
+  &-title{
+    font-size: 48px;
+  }
+
+  &-description{
+    line-height: 1.2857142857;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "lg")){
+  .hero{
+    &-description{
+      line-height: 1.4;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, "md")){
+  .hero{
+    &-title{
+      font-size: 36px;
+      strong span{
+        display: block
+      }
+    }
+  }
 }

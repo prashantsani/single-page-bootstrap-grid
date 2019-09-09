@@ -1,0 +1,22 @@
+.page-header{
+  position: absolute;
+  top:30px;
+  z-index: 10;
+  height: 80px;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  h1{
+    font-size: 18px;
+  }
+  > div.d-flex{
+    height: 100%;
+  }
+}
+
+@media screen and (max-width:580px){
+  .page-header{
+    height: 70px;
+  }
+}
