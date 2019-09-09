@@ -1,0 +1,118 @@
+/*
+	Website
+
+
+	HTML,CSS,JS Code developed by :
+	Author:Prashant Sani,<contact@prashantsani.com>
+
+	Colour Codes:
+	base level Height :
+	base level Width :
+
+	sass --watch main.scss:style.css --style compressed
+
+*/
+
+/* =============================================================================
+	Index
+
+	1) SCSS Variables & Mixins
+	2) CSS / SCSS Plugins
+	3) Global Styles, Resets, Global Links, Core
+	4) Header, Navigation
+	5) Content
+	6) Footer
+	7) Forms
+	8) JS Library Styles
+	9) Non-Symentic Class / Helper Classes
+	10) Print Styles
+	==========================================================================  */
+/* =============================================================================
+	 1. SCSS Variables / Mixins / @Fonts 
+========================================================================== */
+	@import './_core/variables';
+	@import './_core/mixins';
+	@import './_core/fonts';
+
+/* =============================================================================
+	 2. CSS / SCSS Plugins
+========================================================================== */
+	// @import './_plugins/flex.scss';
+	// @import './_plugins/animate';
+
+/* =============================================================================
+	 3. Global Styles, Resets, Global Links
+========================================================================== */
+	/* ------------
+		HTML 5 Resets
+	------------ */
+		::-moz-selection { background: #2d2d32; color: #fff; text-shadow: none;opacity: 1 }
+		::selection { background: #2d2d32; color: #fff; text-shadow: none;opacity: 1 }
+		@import './_core/reset';
+
+/* =============================================================================
+	 4. Header, Main Nav
+========================================================================== */
+	// Combining Header and Nav for Landing and blog page
+	@import './_sections/header.scss';
+	@import './_sections/nav.scss';
+
+/* =============================================================================
+	 5. Content
+========================================================================== */
+		.wrap {
+			margin: 0 auto;
+			position: relative;
+			z-index: 1
+		}
+
+		#main{
+			position: relative;
+			z-index: 10;
+		}
+
+	/* ------------
+		Core
+	------------ */
+		@import './_core/typography';
+		@import './_core/list';
+		@import './_core/buttons';
+		@import './_core/icons';
+
+	/* ------------
+		Sections
+	------------ */
+		@import './_sections/preloader';
+		@import './_sections/hero';
+
+	/* ------------
+		Pages
+	------------ */
+		@import '_pages/common.scss';
+		@import '_pages/index.scss';
+		@import '_pages/about.scss';
+		@import '_pages/contact.scss';
+
+/* =============================================================================
+	6. Footer
+========================================================================== */
+	@import './_sections/footer';
+
+/* =============================================================================
+	7. Forms
+========================================================================== */
+	@import './_core/forms';
+
+/* =============================================================================
+	8. JS Library Styles
+========================================================================== */
+
+/* =============================================================================
+	9. Non-Symentic Class / Helper Classes
+========================================================================== */
+	@import './_core/helper';
+
+/* =============================================================================
+	10. Print Styles
+========================================================================== */
+	@import './_core/print';

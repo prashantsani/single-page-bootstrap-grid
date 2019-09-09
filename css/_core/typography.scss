@@ -1,0 +1,85 @@
+html{
+  // color: ;
+  // font-family: ;
+  // background-color: ;
+  // @media screen and (min-width:1500px){
+  // 	font-size: 18px;
+  // }
+  // @media screen and (max-width:1000px){
+  // 	font-size: 15px;
+  // }
+  // @media screen and (max-width:900px){
+  // 	font-size: 14px;
+  // }
+  // @media screen and (max-width:800px){
+  // 	font-size: 12px;
+  // }
+  // @media screen and (max-width:700px){
+  // 	font-size: 10px;
+  // }
+}
+// Going as per http://www.modularscale.com/?1&em&1.125
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5{
+  
+}
+h1, .h1{
+  // font-family:
+  // font-size :
+  // line-height:
+  // font-family: ;
+
+  &.heading{
+    position: relative;
+  }
+}
+h2, .h2{
+
+}
+h3, .h3{
+
+}
+h4, .h4{
+
+}
+h5, .h5{
+
+}
+h6,.h6{
+  color: inherit;
+}
+small{
+
+}
+p, .p, label{
+  // font-family: ;
+  // line-height: ;
+  // font-size: ;
+  // margin-bottom: ;
+  // letter-spacing: ;
+  // font-weight: ;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  strong,b{
+    // font-family:
+  }
+  em,u,i{
+    text-decoration: underline;
+  }
+}
+.p{
+  color: inherit;
+}
+.pushed{
+  margin-left: 2.5em
+}
+dd{
+
+}
+time{
+
+}
+a{
+  font-family: inherit;
+}

@@ -1,0 +1,39 @@
+/* ------------
+		Reset
+  ------------ */
+// Visually Hide a tag
+.hide-v {
+  border: none !important;
+  clip: rect(0 0 0 0) !important;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+.hidden {
+  display: none;
+}
+/* Contain Floats */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/* ------------
+		Floats
+	------------ */
+#body {
+  .float-right {
+    float: right;
+  }
+  .float-left {
+    float: left;
+  }
+}

@@ -1,0 +1,21 @@
+/* ------------
+  Links & Buttons
+------------ */
+a, button {
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
+}
+a:link,a:visited{
+  color: inherit;
+}
+.no-touchevents a:hover,
+.no-touchevents a:active{
+}
+.current-link {
+  cursor: default;
+}
+button, button:hover {
+  outline: none;
+  border: none;
+  background: transparent
+}
