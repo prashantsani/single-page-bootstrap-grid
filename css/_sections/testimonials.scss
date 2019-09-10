@@ -24,6 +24,31 @@
 	object-position: center center;
 }
 
+.testimonial-text{
+	position: relative;
+	&:before,
+	&:after{
+		position: absolute;
+		opacity: 0.3;	
+		color: $grey-white;	
+		font-family: inherit;	
+		font-size: 72px;	
+		font-weight: 800;	
+		line-height: 0;
+		pointer-events: none;
+	}
+	&:before{
+		content: '“';
+    left: -22px;
+    top: 20px;
+	}
+	&:after{
+		content: '”';
+		right: 15%;
+    bottom: 0;
+	}
+}
+
 @media screen and (max-width: map-get($grid-breakpoints, "lg")){
 	.testimonial-cite,
 	.testimonial-content{
