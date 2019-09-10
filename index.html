@@ -114,7 +114,7 @@
 	<main class="home-content" id="home-content">
 
 		<div class="container px-3 p-md-0">	
-				<section class="home-intro-images d-none d-md-block my-0 my-sm-5 row">
+				<section class="home-intro-images d-none d-md-flex my-0 my-sm-5 row">
 					<picture class="col-4">
 							<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
 							<source type="image/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png">
@@ -239,15 +239,22 @@
 		</div>
 	</main>
 
-	<footer class="footer">
-		<div class="container clearfix">
-			<ul class="footer-nav">
+	<footer class="footer bg-grey text-white">
+		<div class="container h-100 d-flex justify-content-center justify-content-lg-between align-items-center flex-column flex-lg-row">
+			<!-- 
+				Usually the copyright info is placed at bottom,
+				most likely the last thing to be read (via screenreader)
+				or the last thing to be read by search bots 
+				
+				So, keeping this in mind, I placed it below the footer navigation
+			-->
+			<ul class="footer-nav unstyled d-flex order-2">
 				<li><a href="">Privacy Policy</a></li>
-				<li><a href="">| Terms of Use</a></li>
-				<li><a href="">| Sitemap</a></li>
+				<li><a href="">Terms of Use</a></li>
+				<li><a href="">Sitemap</a></li>
 			</ul>
+			<p class="copyright order-1 mb-1 mb-md-3">&copy; 2017 Get An Intervetion, Inc. All Rights Reserved.</p>
 		</div>
-		<p class="copyright">&copy; 2017 Get An Intervetion, Inc. All Rights Reserved.</p>
 	</footer>
 
 
