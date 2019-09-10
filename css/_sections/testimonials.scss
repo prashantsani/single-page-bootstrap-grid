@@ -17,7 +17,8 @@
 	line-height: 26px;
 }
 
-.testimonial-avatar{
+.testimonial-avatar,
+.testimonial-avatar img{
 	-webkit-object-fit: cover;
 	-webkit-object-position: center center;
 	object-fit: cover;
@@ -58,7 +59,8 @@
 }
 
 @media screen and (max-width: map-get($grid-breakpoints, "sm")){
-	.testimonial-avatar{
+	.testimonial-avatar,
+	.testimonial-avatar img{
 		height: 200px;
 		-webkit-object-position: left 30%;
 		object-position: left 30%;
@@ -72,7 +74,8 @@
 }
 
 @media screen and (max-width: map-get($grid-breakpoints, "xs")){
-	.testimonial-avatar{
+	.testimonial-avatar,
+	.testimonial-avatar img{
 		height: 150px;
 	}
 }

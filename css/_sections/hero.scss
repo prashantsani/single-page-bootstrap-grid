@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (max-width: map-get($grid-breakpoints, "md")){
+@media screen and (max-width: map-get($grid-breakpoints, "lg")){
   html .hero{
     &-title{
       font-size: 36px;
