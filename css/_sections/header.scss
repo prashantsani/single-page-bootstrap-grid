@@ -15,8 +15,19 @@
   }
 }
 
-@media screen and (max-width:580px){
+@media screen and (max-width: map-get($grid-breakpoints, "lg")){
   .page-header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba($grey, 0.7);
     height: 70px;
+  }
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, "sm")){
+  .page-header{
+    height: 60px;
   }
 }
