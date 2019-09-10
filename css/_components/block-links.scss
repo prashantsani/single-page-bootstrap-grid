@@ -1,0 +1,80 @@
+.block-links-wrap{
+
+}
+.block-link,
+.block-link-title,
+.block-link-description{
+  transition: all 0.3s ease-in-out;
+}
+
+.block-link{
+  height: 100px;
+  background-color: $white;
+  border: 3px solid #5BC8AF;	
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(100, 67, 67, 0);
+
+  &-title,
+  &-description{
+    display: block;
+    position: relative;
+  }
+
+  &-title{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    // Vertically centers the title
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-description{
+    overflow: hidden;
+    max-height: 0;
+    font-size: 14px;	
+    line-height: 18px;
+    transform: translateY(40px);
+    
+    // font-size: 14px;	
+    // line-height: 18px;
+
+    // I was not able to fit in 14px, instead I used 12px as font-size 
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+html .block-link.active,
+.block-link:hover{
+  background-color: $grey;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  .block-link-title{
+    color: $green
+  }
+  .block-link-description{
+    color: $white;
+  }
+}
+html .block-link.active{
+  background-color: $grey;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  .block-link-title{
+    color: $green;
+    font-size: 14px;
+    top: 10px;
+    transform: translateY(0)
+  }
+  .block-link-description{
+    transform: translateY(0);
+    max-height: 8em;
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, "lg")){
+  html .block-link.active{
+    .block-link-title{
+      top: 18px;
+      margin-bottom: 18px;
+    }
+  }
+}
