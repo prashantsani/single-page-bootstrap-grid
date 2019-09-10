@@ -1,0 +1,13 @@
+.column-2{
+  -webkit-column-count: 2;
+  -webkit-column-gap: 15px;
+  column-count: 2;  
+  column-gap: 15px;
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, "md")){
+  .column-2{
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}

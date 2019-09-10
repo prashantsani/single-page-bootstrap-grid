@@ -9,7 +9,11 @@ h1, h2, h3, h4, h5,
 }
 h1, .h1{
   font-family: inherit;
-
+  font-weight: 700;
+  font-size: 30px;	
+  line-height: 37px;
+  margin-bottom: 15px;
+  
   &.heading{
     position: relative;
   }
@@ -78,3 +82,11 @@ html body .font-black,
 html body .font-weight-900{
   font-weight: 900
 }
+
+@media screen and (max-width: map-get($grid-breakpoints, "md")){
+  h1,.h1{
+    font-size: 18px; 
+    line-height: 22px;
+  }
+}
+
