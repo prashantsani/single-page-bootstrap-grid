@@ -8,8 +8,11 @@ a, button {
 a:link,a:visited{
   color: inherit;
 }
-.no-touchevents a:hover,
-.no-touchevents a:active{
+.no-touchevents .text-green a:hover,
+.no-touchevents a.text-green:hover,
+.no-touchevents .text-green a:active,
+.no-touchevents a.text-green:active{
+  color: $white;
 }
 .current-link {
   cursor: default;

@@ -11,7 +11,13 @@ nav{
 
     &-primary{
         li{
-            margin-right: 15px;
+            margin-right: 30px;
+        }
+        ul{
+            &:after{
+                content: '|';
+                margin-right: 30px;
+            }
         }
     }
     &-social{
@@ -21,3 +27,42 @@ nav{
 .social{
     
 }
+
+
+
+@media screen and (max-width: map-get($grid-breakpoints, "lg")){
+    .nav{
+        &-primary{
+            visibility: hidden;
+            opacity: 0;
+            font-size: 4vw;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            flex: none;
+            background-color: rgba($grey, 0.8);
+            text-align: center;
+            ul{
+                width: 100%;
+                &:after{
+                    display: none;
+                }
+            }
+            li{
+                margin-bottom: 15px;
+            }
+            p{
+                width: 100%;
+                text-align: center;
+            }
+            &.active{
+                opacity: 1;
+                visibility: visible
+            }
+        }
+    }
+}
+  

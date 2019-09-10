@@ -68,31 +68,39 @@
 </head>
 <body id="body">
 
-	<header class="page-header container text-white">
-		<div class="d-flex align-items-center justify-content-between">
+	<header class="page-header container text-white p-md-0">
+		<div class="col-12 d-flex align-items-center justify-content-between">
 			<h1 class="logo text-uppercase"><a href="/index.html">Get <strong>An <span class="font-weight-900">INTERVENTION</span></strong></a></h1>
-			<nav class="nav">
-				<div class="hamburgar"><span></span><span></span></div>
-				<!-- <input type="checkbox" id="hamburger-mask"> -->
-				<div class="nav-primary text-uppercase d-inline-flex">
-					<ul class="unstyled d-flex">
+			<nav class="nav" aria-visible="">
+				<input class="menu-open d-block d-lg-none" type="checkbox" href="#" name="menu-open" id="menu-open"/>
+				<label class="menu-open-button d-block d-lg-none" for="menu-open">
+					<span class="hamburger hamburger-1"></span>
+					<span class="hamburger hamburger-2"></span>
+					<span class="hamburger hamburger-3"></span>
+				</label>
+				<div id="nav-primary" class="nav-primary text-uppercase d-flex flex-column flex-lg-row d-lg-inline-flex align-items-center flex-wrap justify-content-center">
+					<ul class="unstyled text-center d-lg-flex">
 						<li><a href="">HOME</a></li>
 						<li><a href="">ABOUT</a></li>
 						<li><a href="">CONTACT</a></li>
 					</ul>
-					<p>Call Now for a Consult <a href="tel:+18915046283">891.504.6283</a></p>
+					<p class="text-green"><span class="d-block d-lg-inline">Call Now for a Consult</span> <a href="tel:+18915046283">891.504.6283</a></p>
 				</div>
 			</nav>
 		</div>
 	</header>
 
 	<div class="hero hero-home text-white">
-		<div class="container d-flex">
-				<div class="col-12 col-md-7 align-self-center">
-						<h1 class="hero-title text-uppercase">Get An <strong><span class="font-weight-900">INTERVENTION</span></strong></h1>
-						<p class="hero-description">When dealing with addiction, every situation is unique. We have proven intervention strategies that can help you or your loved ones get back on track. Contact us to see how we can help.</p>
+		<div class="container hero-content-container d-flex p-md-0 h-100">
+				<div class="col-12 hero-content p-md-0 col-md-8 col-lg-7 align-self-sm-center">
+						<h1 class="hero-title text-uppercase">Get <strong>An <span class="font-weight-900">INTERVENTION</span></strong></h1>
+						<p class="hero-description text-justify">When dealing with addiction, every situation is unique. We have proven intervention strategies that can help you or your loved ones get back on track. Contact us to see how we can help.</p>
 				</div>
 		</div>
+
+		<p class="container bg-content-only px-3 p-md-0 hero-cta-wrap d-flex align-items-center text-center justify-content-center bg-green">
+			<span class="text-underline hero-cta">Talk to Eric Today to Find <span><strong>Your</strong> Treatment Options</span><strong> <a href="tel:+18915046283">891.504.6283</a></strong></span>
+		</p>
 		
 		<picture class="hero-bg">
 				<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
@@ -100,14 +108,32 @@
 				 -->
 				<img src="images/hero.jpg">
 		</picture>
-		<a href="" class="hero-cta">Talk to Eric Today to Find Your Treatment Options | <strong><a href="tel:+18915046283">891.504.6283</a></strong></a>
 	</div>
 
 
 	<main class="home-content" id="home-content">
-		<div class="container">
-				<section class="image-wrap">
-			
+
+		<div class="container p-0">
+				
+				<section class="home-intro-images my-0 my-sm-5 row">
+					<picture class="col-4">
+							<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
+							<source type="image/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png">
+							-->
+							<img src="images/featured/featured-1.jpg">
+					</picture>
+					<picture class="col-5">
+							<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
+							<source type="image/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png">
+							-->
+							<img src="images/featured/featured-2.jpg">
+					</picture>
+					<picture class="col-3">
+							<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
+							<source type="image/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png">
+							-->
+							<img src="images/featured/featured-3.jpg">
+					</picture>
 				</section>
 			
 				<section class="home-intro my-5">
