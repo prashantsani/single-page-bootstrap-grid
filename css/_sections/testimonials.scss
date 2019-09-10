@@ -1,0 +1,53 @@
+.testimonials-wrap{
+
+}
+
+.testimonials{
+
+}
+
+.testimonial-cite{
+	font-style: normal;
+	font-weight: 700
+}
+
+.testimonial-cite,
+.testimonial-content{
+	font-size: 18px;	
+	line-height: 26px;
+}
+
+.testimonial-avatar{
+	-webkit-object-fit: cover;
+	-webkit-object-position: center center;
+	object-fit: cover;
+	object-position: center center;
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, "lg")){
+	.testimonial-cite,
+	.testimonial-content{
+		font-size: 14px;
+		line-height: 18px;
+	}	
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, "sm")){
+	.testimonial-avatar{
+		height: 200px;
+		-webkit-object-position: left 30%;
+		object-position: left 30%;
+	}
+	.testimonial-content{
+		height: 230px;
+	}
+	.testimonial-cite{
+		text-align: center
+	}
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, "xs")){
+	.testimonial-avatar{
+		height: 150px;
+	}
+}

@@ -1,13 +1,6 @@
 /*
-	Website
-
-
 	HTML,CSS,JS Code developed by :
-	Author:Prashant Sani,<contact@prashantsani.com>
-
-	Colour Codes:
-	base level Height :
-	base level Width :
+	Author: Prashant Sani,<contact@prashantsani.com>
 
 	sass --watch main.scss:style.css --style compressed
 
@@ -93,6 +86,7 @@
 	------------ */
 		@import './_sections/preloader';
 		@import './_sections/hero';
+		@import './_sections/testimonials';
 
 	/* ------------
 		Pages
@@ -115,6 +109,8 @@
 /* =============================================================================
 	8. JS Library Styles
 ========================================================================== */
+	@import './_plugins/glide.core';
+	@import './_plugins/glide.theme';
 
 /* =============================================================================
 	9. Non-Symentic Class / Helper Classes
