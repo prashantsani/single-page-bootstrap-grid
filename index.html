@@ -12,7 +12,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/init.js"></script>
 
 	<!-- robots -->
 	<meta name="document-type" content="Public" />
@@ -44,26 +43,6 @@
 
 	<!-- Chrome On Mobile Theme Color -->
 	<meta name="theme-color" content="#FFF">
-
-
-	<!-- favicon -->
-	<!--<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="site.webmanifest">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-TileImage" content="mstile-144x144.png">
-	<meta name="theme-color" content="#ffffff"> -->
 
 </head>
 <body id="body">
@@ -103,9 +82,8 @@
 		</p>
 		
 		<picture class="hero-bg">
-				<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
-				<source type="image/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png">
-				 -->
+				<source type="image/webp" srcset="images/hero.webp">
+				<source type="image/jpg" srcset="images/hero.jpg">
 				<img src="images/hero.jpg" alt="Support Group">
 		</picture>
 	</div>
@@ -116,21 +94,21 @@
 		<div class="container px-3 p-md-0">	
 				<section class="home-intro-images d-none d-md-flex my-0 my-sm-5 row">
 					<picture class="col-4">
-							<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
-							<source type="image/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png">
-							-->
+							<source type="image/webp" srcset="images/featured/featured-1.webp">
+							<source type="image/jpg" srcset="images/featured/featured-1.jpg">
+							<!-- Fallback -->
 							<img src="images/featured/featured-1.jpg" alt="By mentioning Feature 1 we can improve SEO">
 					</picture>
 					<picture class="col-5">
-							<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
-							<source type="image/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png">
-							-->
+							<source type="image/webp" srcset="images/featured/featured-2.webp">
+							<source type="image/jpg" srcset="images/featured/featured-2.jpg">
+							<!-- Fallback -->
 							<img src="images/featured/featured-2.jpg" alt="By mentioning Feature 2 we can improve SEO">
 					</picture>
 					<picture class="col-3">
-							<!-- <source type="image/webp" media="(min-width: 1921px)" srcset="src/images/very-large/bike.webp">
-							<source type="image/png" media="(min-width: 1921px)" srcset="src/images/very-large/bike.png">
-							-->
+							<source type="image/webp" srcset="images/featured/featured-3.webp">
+							<source type="image/jpg" srcset="images/featured/featured-3.jpg">
+							<!-- Fallback -->
 							<img src="images/featured/featured-3.jpg" alt="By mentioning Feature 3 we can improve SEO">
 					</picture>
 				</section>
@@ -160,7 +138,12 @@
 							<ul class="glide__slides mb-4">
 								<li class="glide__slide">
 									<div class="testimonial row">
-										<img src="images/testimonials/abbie-harvey.jpg" alt="" class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+										<picture class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+											<source type="image/webp" srcset="images/testimonials/abbie-harvey.webp" alt="">
+											<source type="image/jpg" srcset="images/testimonials/abbie-harvey.jpg" alt="">
+											<!-- fallback-->
+											<img src="images/testimonials/abbie-harvey.jpg" alt="">
+										</picture>
 										<blockquote class="testimonial-content col-12 col-sm-8 col-lg-7 bg-grey d-flex flex-column p-5 justify-content-center">
 											<p class="testimonial-text text-white order-2 text-justify">My boyfriend suffered from drug addiction. We had broken up several times and there were times when I thought it was all over. He is really great when he's sober and now I get to be a part of his life in a more healthy way, which is what I really wanted.</p>
 											<cite class="text-green order-1 mb-1 mb-md-3 testimonial-cite">Abbie Harvey</cite>
@@ -169,7 +152,12 @@
 								</li>
 								<li class="glide__slide">
 									<div class="testimonial row">
-										<img src="images/testimonials/xavier-woodley.jpg" alt="" class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+										<picture class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+											<source type="image/webp" srcset="images/testimonials/xavier-woodley.webp" alt="">
+											<source type="image/jpg" srcset="images/testimonials/xavier-woodley.jpg" alt="">
+											<!-- fallback-->
+											<img src="images/testimonials/xavier-woodley.jpg" alt="">
+										</picture>
 										<blockquote class="testimonial-content col-12 col-sm-8 col-lg-7 bg-grey d-flex flex-column p-5 justify-content-center">
 											<p class="testimonial-text text-white order-2 text-justify">When my wife started shopping heavily, I was very angry at her, We used to fight about money almost every day because of it, and I didn't think her arguments made much sense at all. Now I can see she was doing it because she was hurting. This intervention program was the best call I ever made.</p>
 											<cite class="text-green order-1 mb-1 mb-md-3 testimonial-cite">Xavier Woodley</cite>
@@ -178,7 +166,12 @@
 								</li>
 								<li class="glide__slide">
 									<div class="testimonial row">
-										<img src="images/testimonials/pascal-calhoun.jpg" alt="" class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+										<picture class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+											<source type="image/webp" srcset="images/testimonials/pascal-calhoun.webp" alt="">
+											<source type="image/jpg" srcset="images/testimonials/pascal-calhoun.jpg" alt="">
+											<!-- fallback-->
+											<img src="images/testimonials/pascal-calhoun.jpg" alt="">
+										</picture>
 										<blockquote class="testimonial-content col-12 col-sm-8 col-lg-7 bg-grey d-flex flex-column p-5 justify-content-center">
 											<p class="testimonial-text text-white order-2 text-justify">When my best friend started taking me out to bars, I just thought she was a social drinker. It took me two years to find out that she had a serious problem. Without the Alcohol Intervention program, I don't think I could have been able to help her the way I did.</p>
 											<cite class="text-green order-1 mb-1 mb-md-3 testimonial-cite">Pascal Calhoun</cite>
@@ -187,7 +180,12 @@
 								</li>
 								<li class="glide__slide">
 									<div class="testimonial row">
-										<img src="images/testimonials/stephanie-michael.jpg" alt="" class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+										<picture class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+											<source type="image/webp" srcset="images/testimonials/stephanie-michael.webp" alt="">
+											<source type="image/jpg" srcset="images/testimonials/stephanie-michael.jpg" alt="">
+											<!-- fallback-->
+											<img src="images/testimonials/stephanie-michael.jpg" alt="">
+										</picture>
 										<blockquote class="testimonial-content col-12 col-sm-8 col-lg-7 bg-grey d-flex flex-column p-5 justify-content-center">
 											<p class="testimonial-text text-white order-2 text-justify">My son was only 15 years old when he landed himself in a lock-up, I didn't know where to turn. I consider myself very lucky to have stumbled on this program. I am relieved that there are people out there who are really willing to help.</p>
 											<cite class="text-green order-1 mb-1 mb-md-3 testimonial-cite">Stephanie Michael</cite>
@@ -196,7 +194,12 @@
 								</li>
 								<li class="glide__slide">
 									<div class="testimonial row">
-										<img src="images/testimonials/abbie-harvey-2.jpg" alt="" class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+										<picture class="testimonial-avatar col-12 col-sm-4 offset-lg-1 col-lg-3">
+											<source type="image/webp" srcset="images/testimonials/abbie-harvey-2.webp" alt="">
+											<source type="image/jpg" srcset="images/testimonials/abbie-harvey-2.jpg" alt="">
+											<!-- fallback-->
+											<img src="images/testimonials/abbie-harvey-2.jpg" alt="">
+										</picture>
 										<blockquote class="testimonial-content col-12 col-sm-8 col-lg-7 bg-grey d-flex flex-column p-5 justify-content-center">
 											<p class="testimonial-text text-white order-2 text-justify">I could tell my daughter was in real serious trouble when her grades dropped from A to D. I will never forget the way she struggled to answer simple questions. Now we actually talk about the things that are bothering her instead of ignoring them or trying to cover them up. Thank you for the help -- I needed it!</p>
 											<cite class="text-green order-1 mb-1 mb-md-3 testimonial-cite">Abbie Harvey</cite>

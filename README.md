@@ -12,7 +12,6 @@
 - To Compile CSS, `cd` to the CSS folder and type in `sass --watch main.scss:style.css --style compressed` command 
 
 
-
 --- 
 
 ### Resources 
@@ -21,6 +20,8 @@
 - Bootstrap 4 documentation: https://getbootstrap.com/docs/4.1/
 
 - Used a custom build of Bootstrap 4: https://getbootstrap.com/docs/4.1/getting-started/build-tools/
+
+- Bootstrap 4 Flex Documentation: https://getbootstrap.com/docs/4.0/utilities/flex/
 
 - Writing Media Queries with SCSS https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
 
