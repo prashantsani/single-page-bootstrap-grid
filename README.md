@@ -11,6 +11,9 @@
 
 - To Compile CSS, `cd` to the CSS folder and type in `sass --watch main.scss:style.css --style compressed` command 
 
+- Optimised images used, `<picture>` tag used to serve WEBP images. There are many ways to serve WEBP images, using `<picture>` tag is one of the most standards complaint way.
+
+- Entire website code is optimised 
 
 --- 
 
