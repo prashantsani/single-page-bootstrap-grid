@@ -24,7 +24,9 @@
 	});
 	
 	// CAROUSEL
-	new Glide('.glide').mount()
+	new Glide('.glide', {
+		autoplay: 4000
+	}).mount();
 
 
 	// Block Links (WE CAN ORGANISE EVERYTHING) 
